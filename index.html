@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Đơn Giản</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Team Introduction</title>
+    <!-- Thêm Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Chào mừng bạn đến với trang web đơn giản!</h1>
-    <p>Đây là một trang HTML cơ bản.</p>
-    <button onclick="alert('Bạn đã nhấn nút!')">Nhấn vào đây</button>
+<body class="bg-gradient-to-r from-gray-100 to-gray-200 font-sans min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-extrabold text-gray-800 text-center mb-10 drop-shadow-md">Giới thiệu Nhóm</h1>
+
+        <!-- Danh sách thành viên dạng ô vuông -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <a href="member1.html" class="member-card">
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transform transition-all hover:scale-105 hover:shadow-xl">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">
+                        A
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-800">Nguyễn Hoàng Gia Vỹ</h2>
+                    <p class="text-gray-500 text-sm">Dev</p>
+                </div>
+            </a>
+            <a href="member2.html" class="member-card">
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transform transition-all hover:scale-105 hover:shadow-xl">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">
+                        B
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-800">Trịnh Minh Thái Tố</h2>
+                    <p class="text-gray-500 text-sm">Designer</p>
+                </div>
+            </a>
+            <a href="member3.html" class="member-card">
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transform transition-all hover:scale-105 hover:shadow-xl">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">
+                        C
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-800">Phan Nhật Trường</h2>
+                    <p class="text-gray-500 text-sm">Tester</p>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
